@@ -1,0 +1,17 @@
+pipeline{
+agent any
+stages{
+stage('Compile stage'){
+steps{
+withMaven(maven : 'maven-3.8.6'){
+sh 'mvn clean comple' }}}
+stage('Testing stage'){
+steps{
+withMaven(maven : 'maven-3.8.6'){
+sh 'mvn clean comple' }}}
+stage('Deployment stage'){
+steps{
+withMaven(maven : 'maven-3.8.6'){
+sh 'mvn clean comple' }}}
+}
+}
